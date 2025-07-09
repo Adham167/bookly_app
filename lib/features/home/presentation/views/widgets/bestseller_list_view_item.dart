@@ -1,5 +1,6 @@
 import 'package:bookly_app_1/core/utils/assets.dart';
 import 'package:bookly_app_1/core/utils/styles.dart';
+import 'package:bookly_app_1/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/material.dart';
 
 class BestsellerListViewItem extends StatelessWidget {
@@ -25,32 +26,35 @@ class BestsellerListViewItem extends StatelessWidget {
             ),
           ),
           SizedBox(width: 30),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width: MediaQuery.of(context).size.width * 0.5,
-                child: Text(
-                  "Harry Potter and the Goblet of Fire",
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: Styles.textStyle20,
-                ),
-              ),
-              SizedBox(height: 5),
-              Text("J.K Rowling ", style: Styles.textStyle14),
-              Row(
-                children: [
-                  Text(
-                    "19.99 \$",
-                    style: Styles.textStyle20.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  child: Text(
+                    "Harry Potter and the Goblet of Fire",
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: Styles.textStyle20,
                   ),
-                  Text("19.19 \$", style: Styles.textStyle20),
-                ],
-              ),
-            ],
+                ),
+                SizedBox(height: 5),
+                Text("J.K Rowling ", style: Styles.textStyle14),
+                Row(
+                  children: [
+                    Text(
+                      "19.99 \$",
+                      style: Styles.textStyle20.copyWith(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Spacer(),
+                    BookRating(),
+                  ],
+                ),
+              ],
+            ),
           ),
         ],
       ),

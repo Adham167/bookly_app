@@ -16,7 +16,7 @@ class BestsellerListViewItem extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Colors.red,
+                color: const Color.fromARGB(255, 189, 102, 96),
                 image: DecorationImage(
                   fit: BoxFit.fill,
                   image: AssetImage(AssetsData.testimage),
@@ -26,6 +26,7 @@ class BestsellerListViewItem extends StatelessWidget {
           ),
           SizedBox(width: 30),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.5,
@@ -35,6 +36,19 @@ class BestsellerListViewItem extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: Styles.textStyle20,
                 ),
+              ),
+              SizedBox(height: 5),
+              Text("J.K Rowling ", style: Styles.textStyle14),
+              Row(
+                children: [
+                  Text(
+                    "19.99 \$",
+                    style: Styles.textStyle20.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text("19.19 \$", style: Styles.textStyle20),
+                ],
               ),
             ],
           ),

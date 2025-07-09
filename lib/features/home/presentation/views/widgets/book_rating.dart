@@ -17,7 +17,7 @@ class BookRating extends StatelessWidget {
         SizedBox(width: 6.3),
         Text(
           "(6465)",
-          style: Styles.textStyle14.copyWith(color: Color(0xff707070)),
+          style: Styles .textStyle14.copyWith(color: Color(0xff707070)),
         ),
       ],
     );

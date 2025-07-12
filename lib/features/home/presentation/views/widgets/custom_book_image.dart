@@ -9,10 +9,10 @@ class CustomBookImage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: AspectRatio(
-        aspectRatio: 2.67 / 4,
+        aspectRatio: 2.8 / 4,
         child: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(8),
             color: Colors.red,
             image: DecorationImage(
               fit: BoxFit.fill,

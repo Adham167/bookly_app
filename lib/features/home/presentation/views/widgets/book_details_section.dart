@@ -22,7 +22,9 @@ class BookDetailsSection extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.177),
-          child: CustomBookImage(),
+          child: CustomBookImage(
+            imageUrl: "https://www.shutterstock.com/image-photo/book-open-pages-close-up-600nw-2562942291.jpg",
+          ),
         ),
         SizedBox(height: 20),
         Text(

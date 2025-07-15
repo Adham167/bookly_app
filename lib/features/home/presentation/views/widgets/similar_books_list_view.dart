@@ -12,7 +12,7 @@ class SimilarBooksListView extends StatelessWidget {
         itemCount: 10,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return CustomBookImage();
+          return CustomBookImage(imageUrl: "https://www.shutterstock.com/image-photo/book-open-pages-close-up-600nw-2562942291.jpg",);
         },
       ),
     );

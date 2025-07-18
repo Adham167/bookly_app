@@ -35,9 +35,7 @@ class ServerFailure extends Failure {
         return ServerFailure('Bad Certifiate , Please try later!');
       case DioExceptionType.connectionError:
         return ServerFailure('Connection Error , Please try later!');
-      default:
-        return ServerFailure('Oops! there was an error, Please try later');
-    }
+      }
   }
 
   factory ServerFailure.fromResponse(int statusCode, dynamic response) {
